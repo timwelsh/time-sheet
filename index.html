@@ -3,6 +3,7 @@
     <head>
         <!-- Bootstrap SS -->
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+        <link rel="stylesheet" href="style.css">
 
         <title>Time Sheet</title>
     </head>
@@ -17,17 +18,74 @@
             </div>
         </header>
         <div class="container">
-            <div class="row">
-                <div class="col-md">
-                One of three columns
-                </div>
-                <div class="col-md">
-                One of three columns
-                </div>
-                <div class="col-md">
-                One of three columns
+            <div class="card-header">
+            Current Employees
+            </div>
+            <div class="card-body employee-info">
+                <div class="row">
+                    <div class="col-md">
+                    Employee Name
+                    </div>
+                    <div class="col-md">
+                    Role
+                    </div>
+                    <div class="col-md">
+                    Start Date
+                    </div>
+                    <div class="col-md">
+                    Months Worked
+                    </div>
+                    <div class="col-md">
+                    Monthly Rate ($)
+                    </div>
+                    <div class="col-md">
+                    Total Billed ($)
+                    </div>
                 </div>
             </div>
+            <div class="card-body person-1">
+                <div class="row">
+                    <!-- Employee Name -->
+                    <div class="col-md employee-display"></div>
+                    
+                    <!-- Start Date -->
+                    <div class="col-md startdate-display"></div>
+                    
+                    <!-- Role -->
+                    <div class="col-md role-display"></div>
+                    
+                    <!-- Monthly Rate -->
+                    <div class="col-md rate-display"></div>
+                    
+                    <div class="col-md"></div>
+                    
+                    <div class="col-md"></div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <form>
+                <div class="card-header">
+                Add Employee
+                </div>
+                <div class="form-group">
+                    <label for="formGroupExampleInput">Employee Name</label>
+                    <input type="text" class="form-control" id="employee" placeholder="Example input">
+                </div>
+                <div class="form-group">
+                    <label for="formGroupExampleInput2">Role</label>
+                    <input type="text" class="form-control" id="startDate" placeholder="Another input">
+                </div>
+                <div class="form-group">
+                    <label for="formGroupExampleInput">Start Date</label>
+                    <input type="text" class="form-control" id="role" placeholder="Example input">
+                </div>
+                <div class="form-group">
+                    <label for="formGroupExampleInput2">Monthly Rate</label>
+                    <input type="text" class="form-control" id="rate" placeholder="Another input">
+                </div>
+                <button type="submit" class="btn btn-dark">Sign in</button>
+            </form>
         </div>
     </body>
 
@@ -43,7 +101,3 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.20.1/moment.min.js"></script>
 
 </html>
-
-
-
-Collapse 
