@@ -1,17 +1,19 @@
 <!doctype html>
 <html>
     <head>
-        <!-- Bootstrap SS -->
+        <!-- Bootstrap CSS -->
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
-        <!-- <link rel="stylesheet" href="style.css"> -->
+        
+        <!-- Custom CSS -->
+        <link rel="stylesheet" href="style.css">
 
         <title>Time Sheet</title>
     </head>
 
     <body>
         <header>
-            <div class="jumbotron jumbotron-fluid">
-                <div class="container">
+            <div class="jumbotron jumbotron-fluid text-light bg-dark">
+                <div class="container header">
                     <h1 class="display-4">Employee Data Management</h1>
                     <p class="lead">A Comprehensive Directory of Employee Billable Hours</p>
                 </div>
@@ -43,19 +45,19 @@
                     </div>
                 </div>
             </div>
-            <div class="card-body person-1">
+            <div class="card-body employee">
                 <div class="row">
                     <!-- Employee Name -->
-                    <div class="col-md employee-display"></div>
+                    <div class="col-md" id="employee-display"></div>
                     
                     <!-- Start Date -->
-                    <div class="col-md startdate-display"></div>
+                    <div class="col-md" id="startdate-display"></div>
                     
                     <!-- Role -->
-                    <div class="col-md role-display"></div>
+                    <div class="col-md" id="role-display"></div>
                     
                     <!-- Monthly Rate -->
-                    <div class="col-md rate-display"></div>
+                    <div class="col-md" id="rate-display"></div>
                     
                     <div class="col-md"></div>
                     
@@ -63,6 +65,7 @@
                 </div>
             </div>
         </div>
+        <br>
         <div class="container">
             <form>
                 <div class="card-header">
@@ -70,21 +73,21 @@
                 </div>
                 <div class="form-group">
                     <label for="formGroupExampleInput">Employee Name</label>
-                    <input type="text" class="form-control" id="employee" placeholder="Example input">
+                    <input type="text" class="form-control" id="employee-input" placeholder="Employee First and Last Name">
                 </div>
                 <div class="form-group">
                     <label for="formGroupExampleInput2">Role</label>
-                    <input type="text" class="form-control" id="startDate" placeholder="Another input">
+                    <input type="text" class="form-control" id="startDate-input" placeholder="Employee Role">
                 </div>
                 <div class="form-group">
-                    <label for="formGroupExampleInput">Start Date</label>
-                    <input type="text" class="form-control" id="role" placeholder="Example input">
+                    <label for="formGroupExampleInput">Start Date (MM/DD/YYYY)</label>
+                    <input type="text" class="form-control" id="role-input" placeholder="Employee Start Date">
                 </div>
                 <div class="form-group">
                     <label for="formGroupExampleInput2">Monthly Rate</label>
-                    <input type="text" class="form-control" id="rate" placeholder="Another input">
+                    <input type="text" class="form-control" id="rate-input" placeholder="Employee Monthly Salary">
                 </div>
-                <button type="submit" class="btn btn-dark">Add User</button>
+                <button type="submit" class="btn btn-dark">Sign in</button>
             </form>
         </div>
     </body>
