@@ -25,7 +25,12 @@ $( document ).ready(function() {
         role = snapshot.val().role;
         startDate = snapshot.val().startDate;
         rate = snapshot.val().rate;
+        date = snapshot.val().date;
 
+        formattedDate = moment(startDate).format("X")
+        console.log(formattedDate)
+        months = moment().diff(moment(formattedDate, "X"), "months")
+        billed = months * rate
 
         $("#employee-display").append(employee + "<br />");
         $("#startdate-display").append(startDate + "<br />");
@@ -52,7 +57,7 @@ $( document ).ready(function() {
             role: role,
             startDate: startDate,
             rate: rate,
-
+            date:firebase.database.ServerValue.TIMESTAMP
         })
 
     });
