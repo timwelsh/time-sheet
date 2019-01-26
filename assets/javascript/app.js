@@ -48,7 +48,7 @@ $( document ).ready(function() {
         event.preventDefault()
 
         employee = $("#employee-input").val().trim();
-        startDate = $("#startDate-input").val().trim();
+        startDate = $("#startdate-input").val().trim();
         role = $("#role-input").val().trim();
         rate = $("#rate-input").val().trim();
 
